@@ -1,4 +1,5 @@
-# T & T 
+# Angular Apple Music-Lists
+
 
 
 Instruction and deployment:
@@ -24,11 +25,10 @@ Instruction and deployment:
 
 - Serve the application:
 ```javascript
-  cd T&T
+  cd angular-apple-music-lists
   npm run start
 ```
 
 ---
-### Preview
-
-![Preview](https://github.com/leolanese/T-T/blob/master/src/assets/Screen%20Shot%202020-02-28%20at%2016.24.59.png)
+### Demo Preview
+![Angular Apple Music lists preview](https://i.ibb.co/nkNVM0p/Apple-Music-Lists.png)
