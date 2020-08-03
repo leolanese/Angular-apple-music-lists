@@ -1,0 +1,103 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.example-container table th {
+  text-transform: capitalize;
+}
+
+.example-container table th:last-child {
+  text-align: center;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+table tr {
+  border: 1px solid #ddd;
+}
+
+table th, table td {
+  padding: 1em;
+  text-align: left;
+}
+
+table td {
+  vertical-align: top;
+}
+
+.art-work-image {
+  width: 50%;
+  margin: auto;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+@media screen and (max-width: 40em) {
+
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr,
+  table td {
+    display: block;
+  }
+
+  table tr {
+    margin-bottom: 0.5em;
+  }
+
+  table td {
+    border-bottom: 1px dotted #ccc;
+    text-align: right;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

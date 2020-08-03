@@ -1,0 +1,22 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 20%;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.ng-fa-icon {
+  font-size: 1.5555rem;
+  padding: 15px 15px 15px 0;
+}

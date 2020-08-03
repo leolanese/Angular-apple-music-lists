@@ -1,0 +1,43 @@
+<mat-sidenav-container class="sidenav-container">
+
+  <mat-sidenav-content>
+    <mat-toolbar color="secondary">
+      <span>A list of `Playslists to Apple music</span>
+    </mat-toolbar>
+
+    <div class="example-container mat-elevation-z8">
+      <table >
+        <thead>
+        <tr>
+          <th>ind</th>
+          <th>name</th>
+          <th>url</th>
+          <th>curator_name</th>
+          <th>artwork</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of (httpApiService$ | async); index as i; trackBy: trackByData">
+          <td data-label="Kind">{{ i }}</td>
+          <td data-label="Kind">{{ item.kind }}</td>
+          <td data-label="Name">{{ item.name }}</td>
+          <td data-label="URL">
+            <test-button
+              (onClick)="onClickLink($event, item.url)"
+              [valueLabelButton]="valueLabelButton">
+            </test-button>
+          <td data-label="Curator Name">{{ item.curator_name }}</td>
+          <td data-label="Artwork">
+            <div class="card">
+              <img class="art-work-image" [src]="item.artwork" alt="image-artwork" >
+              <div class="container">
+                <p>ID: {{ item.id }}</p>
+              </div>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
