@@ -1,4 +1,4 @@
-# Angular `Apple` Music-Lists
+# Angular `Apple` Music List display
 
 Angular Apple Music-Lists using Angular, RxJS and Angular Material.
 
